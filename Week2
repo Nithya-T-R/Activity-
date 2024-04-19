@@ -1,0 +1,49 @@
+public class Person {
+    private String name;
+    private int age;
+    private String gender;
+
+    // Constructor to initialize attributes
+    public Person(String name, int age, String gender) {
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+    }
+
+    // Method to introduce the person
+    public void introduce() {
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Gender: " + gender);
+    }
+
+    // Getter methods (optional)
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        // Create a new Person object
+        Person person1 = new Person("Alice", 30, "Female");
+
+        // Call the introduce() method to print out the person's information
+        System.out.println("Person 1:");
+        person1.introduce();
+        
+        // Create another Person object
+        Person person2 = new Person("Bob", 25, "Male");
+
+        // Call the introduce() method to print out the person's information
+        System.out.println("\nPerson 2:");
+        person2.introduce();
+    }
+}
